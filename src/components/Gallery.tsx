@@ -10,6 +10,8 @@ const IMG = {
   bench: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/ec6d7bfb-0c58-40e6-9a6e-e4d99472ff1a.jpeg',
   art: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/630c1599-f2b1-4c77-893a-ecd75ee18aae.jpg',
   canopy: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/839ef010-0d5c-4966-bc61-a3e46b0fc5d2.jpg',
+  slide: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/9270acbc-5fb9-4651-8eb8-cc96689ead73.jpg',
+  ship: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/759d82b8-e093-4983-b5b5-84608d9538b6.jpeg',
 };
 
 const filters = [
@@ -21,8 +23,10 @@ const filters = [
 ];
 
 const items = [
-  { cat: 'pergola', tag: 'Пергола', title: 'Пергола с шезлонгами во дворе', img: IMG.pergola },
   { cat: 'playground', tag: 'Детская площадка', title: 'Игровой комплекс-корабль для ЖК', img: IMG.playground },
+  { cat: 'playground', tag: 'Детская площадка', title: 'Горка с металлическим скатом', img: IMG.slide },
+  { cat: 'playground', tag: 'Детская площадка', title: 'Игровой корабль с верёвочной лазалкой', img: IMG.ship },
+  { cat: 'pergola', tag: 'Пергола', title: 'Пергола с шезлонгами во дворе', img: IMG.pergola },
   { cat: 'maf', tag: 'МАФ', title: 'Скамейка с урной и пергола', img: IMG.bench },
   { cat: 'maf', tag: 'Арт-объект', title: 'Шезлонги и световые шары', img: IMG.art },
   { cat: 'pergola', tag: 'Навес', title: 'Навес-пергола над зоной отдыха', img: IMG.canopy },
