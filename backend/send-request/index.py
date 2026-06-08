@@ -62,15 +62,9 @@ def handler(event: dict, context) -> dict:
     except Exception as e:
         print(f'SMTP error: {type(e).__name__}: {e}')
         return {
-            'statusCode': 200,
+            'statusCode': 500,
             'headers': {**cors, 'Content-Type': 'application/json'},
-            'body': json.dumps({
-                'success': False,
-                'debug': f'{type(e).__name__}: {e}',
-                'host': smtp_host,
-                'user': smtp_user,
-                'pass_len': len(smtp_password),
-            }, ensure_ascii=False),
+            'body': json.dumps({'error': 'Не удалось отправить заявку'}, ensure_ascii=False),
         }
 
     return {
