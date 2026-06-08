@@ -48,7 +48,7 @@ export default function HeroSection() {
         </h1>
         <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-100 md:text-xl">
           Монтаж МАФ, детских и спортивных площадок, 3Д заборов, пергол и арт-объектов.
-          Работаем по Краснодарскому краю и Центральной России — от проекта до сдачи под ключ.
+          Работаем по Краснодарскому краю, Черноморскому побережью, Крыму и Центральной России — от проекта до сдачи под ключ.
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <a

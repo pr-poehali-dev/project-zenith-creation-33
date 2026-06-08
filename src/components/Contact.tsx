@@ -8,7 +8,7 @@ const TELEGRAM = 'https://t.me/+79180550004';
 const info = [
   { icon: 'Phone', title: 'Телефон', value: '+7 918-055-00-04', href: 'tel:+79180550004' },
   { icon: 'Mail', title: 'Email', value: 'info@smkosnova.ru', href: 'mailto:info@smkosnova.ru' },
-  { icon: 'MapPin', title: 'Регион работ', value: 'Краснодарский край, Центральная Россия' },
+  { icon: 'MapPin', title: 'Регион работ', value: 'Краснодарский край, Черноморское побережье, Крым, Центральная Россия' },
   { icon: 'Clock', title: 'Режим работы', value: 'Пн-Сб: 9:00 — 20:00' },
 ];
 
