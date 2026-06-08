@@ -14,6 +14,7 @@ const IMG = {
   ship: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/759d82b8-e093-4983-b5b5-84608d9538b6.jpeg',
   pergola2: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/4938a363-4db4-427f-b165-dc3cafdbd16e.jpeg',
   pergola3: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/c14c206c-ae35-4a8b-a9ef-a32fbe5cad13.jpg',
+  geo: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/a1b020a0-fc0b-4948-9ed6-531593ff2948.png',
 };
 
 const filters = [
@@ -22,6 +23,7 @@ const filters = [
   { key: 'playground', label: 'Площадки' },
   { key: 'maf', label: 'Скамейки и МАФ' },
   { key: 'fence', label: '3Д заборы' },
+  { key: 'geo', label: 'Геопластика' },
 ];
 
 const items = [
@@ -36,6 +38,7 @@ const items = [
   { cat: 'pergola', tag: 'Навес', title: 'Навес-пергола над зоной отдыха', img: IMG.canopy },
   { cat: 'fence', tag: '3Д забор', title: '3Д ограждение спортзоны', img: IMG.fence },
   { cat: 'playground', tag: 'Спортплощадка', title: 'Уличные тренажёры во дворе', img: IMG.sport },
+  { cat: 'geo', tag: 'Геопластика', title: 'Игровые холмы с горкой и скалодромом', img: IMG.geo },
 ];
 
 export default function Gallery() {
