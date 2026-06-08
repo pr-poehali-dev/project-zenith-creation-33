@@ -6,25 +6,28 @@ const IMG = {
   playground: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/a4f5c16a-c3b4-4e86-9561-4d765889c91c.jpeg',
   sport: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/3ef90d67-8f55-47b2-bfd9-0ca1e0f69c1c.jpg',
   fence: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/d2a7a775-975c-407c-9a33-ceb0eb4d1956.jpg',
-  pergola: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/2bb72fd7-4952-4b2e-a9b1-478926be6796.jpg',
-  maf: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/13ec0d0b-375e-412e-baed-3bd58bafd9c3.jpg',
+  pergola: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/d670dd43-86b7-4259-bea6-d801e48a7662.png',
+  bench: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/ec6d7bfb-0c58-40e6-9a6e-e4d99472ff1a.jpeg',
+  art: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/630c1599-f2b1-4c77-893a-ecd75ee18aae.jpg',
+  canopy: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/839ef010-0d5c-4966-bc61-a3e46b0fc5d2.jpg',
 };
 
 const filters = [
   { key: 'all', label: 'Все работы' },
   { key: 'pergola', label: 'Перголы' },
   { key: 'playground', label: 'Площадки' },
-  { key: 'maf', label: 'МАФ' },
+  { key: 'maf', label: 'Скамейки и МАФ' },
   { key: 'fence', label: '3Д заборы' },
 ];
 
 const items = [
-  { cat: 'pergola', tag: 'Пергола', title: 'Пергола с вьющимися растениями', img: IMG.pergola },
-  { cat: 'playground', tag: 'Детская площадка', title: 'Игровой комплекс для ЖК', img: IMG.playground },
-  { cat: 'maf', tag: 'МАФ', title: 'Скамейки и освещение в парке', img: IMG.maf },
+  { cat: 'pergola', tag: 'Пергола', title: 'Пергола с шезлонгами во дворе', img: IMG.pergola },
+  { cat: 'playground', tag: 'Детская площадка', title: 'Игровой комплекс-корабль для ЖК', img: IMG.playground },
+  { cat: 'maf', tag: 'МАФ', title: 'Скамейка с урной и пергола', img: IMG.bench },
+  { cat: 'maf', tag: 'Арт-объект', title: 'Шезлонги и световые шары', img: IMG.art },
+  { cat: 'pergola', tag: 'Навес', title: 'Навес-пергола над зоной отдыха', img: IMG.canopy },
   { cat: 'fence', tag: '3Д забор', title: '3Д ограждение спортзоны', img: IMG.fence },
   { cat: 'playground', tag: 'Спортплощадка', title: 'Уличные тренажёры во дворе', img: IMG.sport },
-  { cat: 'maf', tag: 'МАФ', title: 'Комплексное благоустройство двора', img: IMG.maf },
 ];
 
 export default function Gallery() {
