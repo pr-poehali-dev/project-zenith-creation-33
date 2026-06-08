@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import Icon from '@/components/ui/icon';
 
 const info = [
-  { icon: 'Phone', title: 'Телефон', value: '+7 (999) 123-45-67' },
-  { icon: 'Mail', title: 'Email', value: 'info@landshaftpro.ru' },
+  { icon: 'Phone', title: 'Телефон', value: '+7 918-055-00-04' },
+  { icon: 'Mail', title: 'Email', value: 'info@smkosnova.ru' },
   { icon: 'MapPin', title: 'Регион работ', value: 'Краснодарский край, Центральная Россия' },
   { icon: 'Clock', title: 'Режим работы', value: 'Пн-Сб: 9:00 — 20:00' },
 ];
@@ -11,7 +11,7 @@ const info = [
 export default function Contact() {
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSent(true);
     e.currentTarget.reset();

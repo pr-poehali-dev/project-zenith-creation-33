@@ -19,7 +19,7 @@ export default function Navbar() {
           <a href="#home" className="flex items-center gap-2">
             <Icon name="TreePine" className="text-green-600" size={28} />
             <span className="text-xl font-bold text-gray-900">
-              Ландшафт<span className="text-green-600">Про</span>
+              СМК<span className="text-green-600">Основа</span>
             </span>
           </a>
           <div className="hidden items-center gap-8 md:flex">
