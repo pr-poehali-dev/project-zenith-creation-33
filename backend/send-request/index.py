@@ -34,10 +34,10 @@ def handler(event: dict, context) -> dict:
     if not name or not phone:
         return {'statusCode': 400, 'headers': cors, 'body': json.dumps({'error': 'Имя и телефон обязательны'})}
 
-    smtp_host = os.environ.get('SMTP_HOST')
-    smtp_user = os.environ.get('SMTP_USER')
-    smtp_password = os.environ.get('SMTP_PASSWORD')
-    notify_email = os.environ.get('NOTIFY_EMAIL')
+    smtp_host = (os.environ.get('SMTP_HOST') or '').strip()
+    smtp_user = (os.environ.get('SMTP_USER') or '').strip()
+    smtp_password = (os.environ.get('SMTP_PASSWORD') or '').replace(' ', '').strip()
+    notify_email = (os.environ.get('NOTIFY_EMAIL') or '').strip()
 
     if not all([smtp_host, smtp_user, smtp_password, notify_email]):
         return {'statusCode': 500, 'headers': cors, 'body': json.dumps({'error': 'Почта не настроена'})}
@@ -62,9 +62,15 @@ def handler(event: dict, context) -> dict:
     except Exception as e:
         print(f'SMTP error: {type(e).__name__}: {e}')
         return {
-            'statusCode': 500,
+            'statusCode': 200,
             'headers': {**cors, 'Content-Type': 'application/json'},
-            'body': json.dumps({'error': f'{type(e).__name__}: {e}'}, ensure_ascii=False),
+            'body': json.dumps({
+                'success': False,
+                'debug': f'{type(e).__name__}: {e}',
+                'host': smtp_host,
+                'user': smtp_user,
+                'pass_len': len(smtp_password),
+            }, ensure_ascii=False),
         }
 
     return {
