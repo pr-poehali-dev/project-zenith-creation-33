@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import Icon from '@/components/ui/icon';
 
 const IMG = {
-  playground: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/a0d12605-58cf-4e7f-9d49-a80cf2994a3c.jpg',
+  playground: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/a4f5c16a-c3b4-4e86-9561-4d765889c91c.jpeg',
   sport: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/3ef90d67-8f55-47b2-bfd9-0ca1e0f69c1c.jpg',
   fence: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/d2a7a775-975c-407c-9a33-ceb0eb4d1956.jpg',
   pergola: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/2bb72fd7-4952-4b2e-a9b1-478926be6796.jpg',

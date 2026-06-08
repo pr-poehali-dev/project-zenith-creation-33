@@ -2,7 +2,7 @@ const services = [
   {
     title: 'Детские и спортивные площадки',
     text: 'Игровые комплексы и спортивные тренажёры. Монтаж с соблюдением всех норм и стандартов безопасности.',
-    img: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/files/a0d12605-58cf-4e7f-9d49-a80cf2994a3c.jpg',
+    img: 'https://cdn.poehali.dev/projects/a0811768-77ab-429b-85d6-7d186456d6c8/bucket/a4f5c16a-c3b4-4e86-9561-4d765889c91c.jpeg',
   },
   {
     title: 'Перголы и зоны отдыха',
