@@ -55,9 +55,17 @@ def handler(event: dict, context) -> dict:
     msg['From'] = smtp_user
     msg['To'] = notify_email
 
-    with smtplib.SMTP_SSL(smtp_host, 465) as server:
-        server.login(smtp_user, smtp_password)
-        server.sendmail(smtp_user, [notify_email], msg.as_string())
+    try:
+        with smtplib.SMTP_SSL(smtp_host, 465) as server:
+            server.login(smtp_user, smtp_password)
+            server.sendmail(smtp_user, [notify_email], msg.as_string())
+    except Exception as e:
+        print(f'SMTP error: {type(e).__name__}: {e}')
+        return {
+            'statusCode': 500,
+            'headers': {**cors, 'Content-Type': 'application/json'},
+            'body': json.dumps({'error': f'{type(e).__name__}: {e}'}, ensure_ascii=False),
+        }
 
     return {
         'statusCode': 200,
