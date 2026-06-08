@@ -20,9 +20,37 @@ export default function Footer() {
 
           <div className="text-sm leading-relaxed text-gray-400">
             <div className="mb-3 font-semibold text-white">Контакты</div>
-            <p>Тел.: +7 918-055-00-04</p>
-            <p>Email: info@smkosnova.ru</p>
+            <p>
+              Тел.:{' '}
+              <a href="tel:+79180550004" className="transition hover:text-green-500">
+                +7 918-055-00-04
+              </a>
+            </p>
+            <p>
+              Email:{' '}
+              <a href="mailto:info@smkosnova.ru" className="transition hover:text-green-500">
+                info@smkosnova.ru
+              </a>
+            </p>
             <p>353982, Краснодарский край, г. Новороссийск,<br />ст-ца Натухаевская, ул. Симферопольская, д. 6</p>
+            <div className="mt-3 flex gap-4">
+              <a
+                href="https://t.me/+79180550004"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-green-500"
+              >
+                Telegram
+              </a>
+              <a
+                href="https://wa.me/79180550004"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-green-500"
+              >
+                WhatsApp
+              </a>
+            </div>
           </div>
 
           <div className="text-sm leading-relaxed text-gray-400">

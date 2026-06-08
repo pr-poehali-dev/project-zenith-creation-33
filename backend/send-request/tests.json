@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS CORS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Validation error without name and phone",
+      "method": "POST",
+      "path": "/",
+      "body": {"service": "Перголы"},
+      "expectedStatus": 400
+    }
+  ]
+}
