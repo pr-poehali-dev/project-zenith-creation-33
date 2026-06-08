@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="mb-3 flex items-center gap-2">
-              <Icon name="TreePine" className="text-green-500" size={26} />
+              <Icon name="PocketKnife" className="text-green-500" size={26} />
               <span className="font-bold text-white">
                 СМК<span className="text-green-500">Основа</span>
               </span>
