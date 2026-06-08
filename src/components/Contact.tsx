@@ -1,8 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import Icon from '@/components/ui/icon';
-import func2url from '../../backend/func2url.json';
 
-const SEND_URL = func2url['send-request'];
+const SEND_URL = 'https://functions.poehali.dev/3372badd-4bb6-4519-9f01-838e8494ad90';
 const WHATSAPP = 'https://wa.me/79180550004';
 const TELEGRAM = 'https://t.me/+79180550004';
 
